@@ -1,3 +1,9 @@
 package ecosia
 
-var Ecosia = "https://www.ecosia.org/search?q="
+type tunnel struct {
+  Url string
+}
+
+var Ecosia = tunnel{
+    Url: "https://www.ecosia.org/search?q=",
+}

@@ -6,6 +6,6 @@ import (
 )
 
 var Tunnels = []string{
-    ecosia.Ecosia,
-    bing.Bing,
+    ecosia.Ecosia.Url,
+    bing.Bing.Url,
 }

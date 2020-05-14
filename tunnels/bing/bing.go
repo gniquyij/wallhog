@@ -1,3 +1,9 @@
 package bing
 
-var Bing = "https://www.bing.com/search?q="
+type tunnel struct {
+  Url string
+}
+
+var Bing = tunnel{
+    Url: "https://www.bing.com/search?q=",
+}
