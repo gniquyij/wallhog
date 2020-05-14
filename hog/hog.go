@@ -4,6 +4,7 @@ import (
     "os/exec"
 )
 
-func OpenUrl(url string) {
+func OpenUrl(tunnel, keyword string) {
+    url := tunnel + keyword
     exec.Command("open", url).Run() // mac
 }

@@ -1,16 +1,16 @@
 package main
 
 import (
-    "wallhog/tunnels"
-    "wallhog/hog"
+    "os"
     "time"
-    "fmt"
+    "wallhog/hog"
+    "wallhog/tunnels"
 )
 
 func main() {
+    keyword := os.Args[1]
     for _, tunnel := range tunnels.Tunnels {
-        fmt.Printf(tunnel)
-        go hog.OpenUrl(tunnel)
+        go hog.OpenUrl(tunnel, keyword)
     }
     time.Sleep(3600 * time.Second)
 }
