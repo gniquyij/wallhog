@@ -2,6 +2,7 @@ package main
 
 import (
     "wallhog/hog"
+    "time"
 )
 
 func main() {
@@ -11,6 +12,7 @@ func main() {
         "https://www.bing.com/search?q=ac",
     }
     for _, tunnel := range tunnels {
-        hog.OpenUrl(tunnel)
+        go hog.OpenUrl(tunnel)
     }
+    time.Sleep(3600 * time.Second)
 }
