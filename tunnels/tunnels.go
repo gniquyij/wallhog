@@ -18,13 +18,11 @@ func GetAll(file string) Tunnels {
     if err != nil {
         fmt.Print(err)
     }
-
     var All Tunnels
     err = json.Unmarshal(data, &All)
     if err != nil {
         fmt.Println("error:", err)
     }
-
     return All
 }
 
