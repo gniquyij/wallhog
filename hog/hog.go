@@ -6,5 +6,5 @@ import (
 
 func OpenUrl(tunnel, keyword string) {
     url := tunnel + keyword
-    exec.Command("open", url).Run() // mac
+    exec.Command("open", url).Run() // os: mac, browser: default
 }
