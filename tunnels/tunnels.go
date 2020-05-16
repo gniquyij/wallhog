@@ -8,32 +8,42 @@ import (
 
 type Tunnel struct {
     Name, Url string
+    Tags []string
 }
 
 type Tunnels []Tunnel
 
-func GetTunnelData(file string) Tunnels {
+func GetAll(file string) Tunnels {
     data, err := ioutil.ReadFile(file)
     if err != nil {
         fmt.Print(err)
     }
 
-    var TunnelData Tunnels
-    err = json.Unmarshal(data, &TunnelData)
+    var All Tunnels
+    err = json.Unmarshal(data, &All)
     if err != nil {
         fmt.Println("error:", err)
     }
 
-    return TunnelData
+    return All
 }
 
-func GetTunnelUrls(file string) []string {
-    var TunnelData = GetTunnelData(file)
-
-    var TunnelUrls = []string{}
-    for i := 0; i < len(TunnelData); i++ {
-        TunnelUrls = append(TunnelUrls, TunnelData[i].Url)
+func GetUrls(file, tag string) []string {
+    var All = GetAll(file)
+    var Urls = []string{}
+    for i := 0; i < len(All); i++ {
+        if tag != "" {
+            tags := All[i].Tags
+            set := make(map[string] bool)
+            for _, v := range tags {
+                set[v] = true
+            }
+            if set[tag] {
+                Urls = append(Urls, All[i].Url)
+            }
+        }else{
+            Urls = append(Urls, All[i].Url)
+        }
     }
-
-    return TunnelUrls
+    return Urls
 }

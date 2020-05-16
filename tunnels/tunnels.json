@@ -1,23 +1,37 @@
 [
   {
-    "name": "bing",
+    "name": "Bing",
     "url": "https://www.bing.com/search?q=",
-    "tags": ["fdg", "sd"]
+    "tags": []
   },
   {
-    "name": "ecosia",
-    "url": "https://www.ecosia.org/search?q="
+    "name": "Ecosia",
+    "url": "https://www.ecosia.org/search?q=",
+    "tags": []
   },
   {
-    "name": "qwant",
-    "url": "https://www.qwant.com/?q="
+    "name": "Library Genesis",
+    "url": "https://libgen.lc/search.php?req=",
+    "tags": ["book"]
   },
   {
-    "name": "yandex",
-    "url": "https://yandex.com/search/?text="
+    "name": "Qwant",
+    "url": "https://www.qwant.com/?q=",
+    "tags": []
+  },
+  {
+    "name": "Yandex",
+    "url": "https://yandex.com/search/?text=",
+    "tags": []
   },
   {
     "name": "zhihu",
-    "url": "https://www.zhihu.com/search?type=content&q="
+    "url": "https://www.zhihu.com/search?type=content&q=",
+    "tags": []
+  },
+  {
+    "name": "ZLibrary",
+    "url": "https://b-ok.org/s/?q=",
+    "tags": ["book"]
   }
 ]
