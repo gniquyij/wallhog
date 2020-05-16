@@ -1,0 +1,22 @@
+[
+  {
+    "name": "bing",
+    "url": "https://www.bing.com/search?q="
+  },
+  {
+    "name": "ecosia",
+    "url": "https://www.ecosia.org/search?q="
+  },
+  {
+    "name": "qwant",
+    "url": "https://www.qwant.com/?q="
+  },
+  {
+    "name": "yandex",
+    "url": "https://yandex.com/search/?text="
+  },
+  {
+    "name": "zhihu",
+    "url": "https://www.zhihu.com/search?type=content&q="
+  }
+]
