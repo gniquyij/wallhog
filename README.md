@@ -1,5 +1,7 @@
 # wallhog
 
+![demo](./demo-general.gif)
+
 Web search from cmd. 
 
 `$ ./wh <keyword>` will:
