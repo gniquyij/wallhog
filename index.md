@@ -18,7 +18,7 @@ It would pick up the search engine(s) from my site collection, open my default b
 Example 1: Search 'golang'
 ![demo-general](./demo-general.gif)
 
-Example 2: Search 'the little schemer' via the engines for 'book' search
+Example 2: Search 'the little schemer' via the engines tagged for 'book' search
 ![demo-book](./demo-book.gif) 
 
 <div style="border-top:1px solid #e1e4e8;padding-top:16px"></div>
