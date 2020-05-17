@@ -9,7 +9,7 @@ import (
 
 func main() {
     var tag string
-    flag.StringVar(&tag, "t", "", "Specify a tag. Default is blank.")
+    flag.StringVar(&tag, "t", "general", "Specify a tag. Default is general.")
     flag.Parse()
     keyword := flag.Args()[0]
     tunnelUrls := tunnels.GetUrls("./tunnels/tunnels.json", tag)

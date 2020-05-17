@@ -2,12 +2,12 @@
   {
     "name": "Bing",
     "url": "https://www.bing.com/search?q=",
-    "tags": []
+    "tags": ["general"]
   },
   {
     "name": "Ecosia",
     "url": "https://www.ecosia.org/search?q=",
-    "tags": []
+    "tags": ["general"]
   },
   {
     "name": "Library Genesis",
@@ -17,17 +17,17 @@
   {
     "name": "Qwant",
     "url": "https://www.qwant.com/?q=",
-    "tags": []
+    "tags": ["general"]
   },
   {
     "name": "Yandex",
     "url": "https://yandex.com/search/?text=",
-    "tags": []
+    "tags": ["general"]
   },
   {
     "name": "zhihu",
     "url": "https://www.zhihu.com/search?type=content&q=",
-    "tags": []
+    "tags": ["general"]
   },
   {
     "name": "ZLibrary",
