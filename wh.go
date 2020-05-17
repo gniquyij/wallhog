@@ -14,9 +14,7 @@ func main() {
     flag.StringVar(&tag, "t", "general", "Specify a tag. Default is general.")
     flag.Parse()
     keyword := flag.Args()[0]
-//     currentPath, _ := os.Getwd()
     whPath := os.Getenv("WALLHOG_PATH")
-//     whPath := "/Users/yuqing.ji/wallhog"
     dataPath := filepath.Join(whPath, "/tunnels/tunnels.json")
     tunnelUrls := tunnels.GetUrls(dataPath, tag)
     for _, tunnel := range tunnelUrls {
