@@ -13,7 +13,7 @@ wallhog is simple. When I want to search something, what I need to do is:
 - type the few wallhog commands with what I want to search and which search engine(s) I want to use (optional)
 - press Enter
 
-It would pick up the search engine(s) from my site collection, open my default browser and search with the keyword via the engine(s) in different tabs, 'concurrently'. I made the concurrent action with goroutines. 
+It would pick up the search engine(s) from my site collection, open my default browser then search with the keyword via the engine(s) in different tabs, 'concurrently'. I made the concurrent action with goroutines. 
 
 <div style="border-top:1px solid #e1e4e8;padding-top:16px"></div>
 <div>© 2018-2020 by YUQING JI</div>
