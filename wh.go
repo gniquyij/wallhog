@@ -5,8 +5,8 @@ import (
     "os"
     "path/filepath"
     "time"
-    "wallhog/hog"
-    "wallhog/tunnels"
+    "github.com/vjyq/wallhog/hog"
+    "github.com/vjyq/wallhog/tunnels"
 )
 
 func main() {
