@@ -18,6 +18,7 @@ $ go get github.com/vjyq/wallhog
 $ cd $(go env GOPATH)/src/github.com/vjyq/wallhog/bin
 $ bash shortcut.sh
 ```
+Then just restart your terminal.
 
 ## Author
 
