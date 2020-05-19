@@ -20,5 +20,5 @@ func main() {
     for _, tunnel := range tunnelUrls {
         go hog.OpenUrl(tunnel, keyword) // if multi tags
     }
-    time.Sleep(3600 * time.Second)
+    time.Sleep(300 * time.Second)
 }
