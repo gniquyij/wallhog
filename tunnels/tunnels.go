@@ -4,6 +4,7 @@ import (
     "encoding/json"
     "fmt"
     "io/ioutil"
+    "strings"
 )
 
 type Tunnel struct {
@@ -26,17 +27,22 @@ func GetAll(file string) Tunnels {
     return All
 }
 
-func GetUrls(file, tag string) []string {
+func GetUrls(file, tags string) []string {
     var All = GetAll(file)
     var Urls = []string{}
+    var tagSlice = strings.Split(tags, " ")
     for i := 0; i < len(All); i++ {
-        if tag != "" {
-            tags := All[i].Tags
+        if tags != "" {
+            tunnelTags := All[i].Tags
             set := make(map[string] bool)
-            for _, v := range tags {
+            for _, v := range tunnelTags {
                 set[v] = true
             }
-            if set[tag] {
+            var tagsExisted = set[tagSlice[0]]
+            for n := 1; n < len(tagSlice); n++ {
+                tagsExisted = tagsExisted && set[tagSlice[n]]
+            }
+            if tagsExisted {
                 Urls = append(Urls, All[i].Url)
             }
         }else{
