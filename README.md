@@ -42,6 +42,7 @@ $ go install
 
 Highly recommend you share your search engine(s) through a pull request. PR name please follow: 
 - [new engine] <engine-name>
+
 e.g. '[new engine] Google'
 
 You could also submit an issue if you require my help. Issue name please refer to PR name. 
