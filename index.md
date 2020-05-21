@@ -18,8 +18,11 @@ It would pick up the search engine(s) from my site collection, open my default b
 Example 1: Search 'golang'
 ![demo-general](./demo-general.gif)
 
-Example 2: Search 'the little schemer' via the engines tagged for 'book' search
+Example 2: Search 'the little schemer' via the search engines tagged with 'book'
 ![demo-book](./demo-book.gif) 
+
+Example 3: Search 'tech' via the engines tagged with both 'general' and 'zh' - 'zh' refers to Chinese. As you can see, only the ones with all the desired tags would be triggered. 
+![demo-mutlitags](./demo-multitags.gif)
 
 <div style="border-top:1px solid #e1e4e8;padding-top:16px"></div>
 <div>© 2018-2020 by YUQING JI</div>
