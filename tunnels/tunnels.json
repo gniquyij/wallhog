@@ -20,6 +20,11 @@
     "tags": ["general"]
   },
   {
+    "name": "stackoverflow",
+    "url": "https://stackoverflow.com/search?q=",
+    "tags": ["code"]
+  },
+  {
     "name": "Yandex",
     "url": "https://yandex.com/search/?text=",
     "tags": ["general"]
@@ -27,7 +32,7 @@
   {
     "name": "zhihu",
     "url": "https://www.zhihu.com/search?type=content&q=",
-    "tags": ["general"]
+    "tags": ["zh", "general"]
   },
   {
     "name": "ZLibrary",
