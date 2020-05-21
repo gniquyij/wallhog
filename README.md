@@ -41,7 +41,7 @@ $ go install
 ```
 
 Highly recommend you share your search engine(s) through a pull request. PR name please follow: 
-- [new engine] <engine-name>
+- [new engine] \<engine-name>
 
 e.g. '[new engine] Google'
 
