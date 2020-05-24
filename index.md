@@ -13,7 +13,7 @@ wallhog is simple. When I want to search something, what I need to do is:
 - type the few wallhog commands with what I want to search and which search engine(s) I want to use (optional)
 - press Enter
 
-It would pick up the search engine(s) from my site collection, open my default browser then search with the keyword via the engine(s) in different tabs, 'concurrently'. I made the concurrent action with goroutines.
+It would pick up the search engine(s) from my site collection, open my default browser then search with the keyword via the engine(s) in different tabs, 'concurrently'. 
 
 Example 1: Search 'golang'
 ![demo-general](./demo-general.gif)
@@ -23,6 +23,9 @@ Example 2: Search 'the little schemer' via the search engines tagged with 'book'
 
 Example 3: Search 'tech' via the engines tagged with both 'general' and 'zh' - 'zh' refers to Chinese. As you can see, only the ones with all the desired tags would be triggered. 
 ![demo-mutlitags](./demo-multitags.gif)
+
+I made the concurrent action with goroutines. Here's the reason:
+![demo-goroutines](./demo-goroutines.gif)
 
 <div style="border-top:1px solid #e1e4e8;padding-top:16px"></div>
 <div>© 2018-2020 by YUQING JI</div>
